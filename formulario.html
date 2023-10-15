@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Formulário HTML</title>
+</head>
+
+<body>
+
+    <h1>Formulário de Contato</h1>
+
+    <form action="processar_formulario.php" method="post">
+        <!-- Atributos "action" e "method" definem o URL para processar o formulário e o método HTTP -->
+
+        <label for="nome">Nome:</label>
+        <!-- A tag "label" é usada para rotular um campo de entrada -->
+        <input type="text" id="nome" name="nome" required>
+        <!-- A tag "input" cria um campo de entrada de texto -->
+        <!-- O atributo "type" define o tipo de entrada (texto no caso) -->
+        <!-- Os atributos "id" e "name" são usados para identificar o campo -->
+        <!-- O atributo "required" torna o campo obrigatório -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <!-- O tipo "email" valida automaticamente o formato de email -->
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <!-- A tag "textarea" cria um campo de texto multilinha -->
+        <!-- O atributo "rows" define o número de linhas visíveis -->
+
+        <input type="submit" value="Enviar">
+        <!-- A tag "input" com "type" definido como "submit" cria um botão de envio -->
+
+    </form>
+
+    <!-- Explicação sobre formulários -->
+    <h2>Como Funcionam os Formulários em HTML</h2>
+    <p>Os formulários em HTML permitem que os usuários insiram informações e as enviem para processamento. Aqui estão os elementos-chave:</p>
+
+    <ul>
+        <li><strong>Formulário (`<form>`):</strong> Define a seção do formulário e inclui os campos de entrada e botões de envio. O atributo "action" especifica para onde os dados do formulário serão enviados, e o "method" define o método HTTP.</li>
+        <li><strong>Rótulos (`<label>`):</strong> Os rótulos são usados para descrever o propósito dos campos de entrada. O atributo "for" em um rótulo deve corresponder ao atributo "id" do campo relacionado.</li>
+        <li><strong>Campos de Entrada (`<input>`):</strong> São usados para coletar informações. O atributo "type" define o tipo de campo, como texto ou email. O atributo "name" é usado para identificar o campo no servidor, e "required" torna-o obrigatório.</li>
+        <li><strong>Campos de Texto Multilinha (`<textarea>`):</strong> Permitem a entrada de texto em várias linhas. O atributo "rows" controla a altura visível do campo.</li>
+        <li><strong>Botões de Envio (`<input type="submit">`):</strong> São usados para enviar o formulário. Quando clicados, os dados são enviados para o URL especificado no atributo "action".</li>
+    </ul>
+
+    <p>Esta é uma estrutura básica de um formulário em HTML, mas você pode personalizá-la de acordo com suas necessidades.</p>
+
+</body>
+
+</html>
